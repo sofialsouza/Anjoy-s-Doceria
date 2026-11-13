@@ -8,9 +8,9 @@ INTEGRANTES:
  - Sofia Lopes de Souza - nº
 
 LINKS:
- Site (GitHub Pages): https://usuario.github.io/nome-do-repositorio/
- Repositório (GitHub): https://github.com/usuario/nome-do-repositorio
- Vídeo (YouTube): https://www.youtube.com/watch?v=...
+ Site (GitHub Pages): https://sofialsouza.github.io/Anjoy-s-Doceria/ 
+ Repositório (GitHub): https://github.com/sofialsouza/Anjoy-s-Doceria
+ Vídeo (YouTube): https://youtu.be/TSg4JYnx6gQ
 
 RECURSOS DE JAVASCRIPT IMPLEMENTADOS (mínimo de 8) - arquivo js/script.js:
  1. Slideshow / carrossel - index.html
