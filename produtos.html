@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos | Anjoy's</title>
+  <meta name="description" content="Catálogo completo da Anjoy's com 50 doces natalinos. Filtre por categoria ou busque por nome.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="produtos.html" aria-current="page">Produtos</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="ofertas.html">Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="secao container" aria-labelledby="titulo-prod">
+      <h1 id="titulo-prod">Catálogo de doces natalinos</h1>
+      <article class="texto-largo"><h2 class="sr-only">Sobre o catálogo</h2><p>Panetones, chocolates, biscoitos, bolos, doces finos e kits de presente. Use a busca ou as categorias para encontrar o seu favorito.</p></article>
+      <div class="filtros">
+        <label for="busca" class="sr-only">Buscar produto por nome</label>
+        <input id="busca" type="search" placeholder="Buscar por nome, ex.: panetone" autocomplete="off">
+        <div id="categorias" class="categorias" role="group" aria-label="Filtrar por categoria"></div>
+      </div>
+      <p id="contador" class="contador" aria-live="polite"></p>
+      <p id="vazio" class="vazio" hidden>Nenhum produto encontrado. Tente outro nome ou escolha “Todas” nas categorias.</p>
+      <div class="grade" id="grade"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria natalina artesanal.</p>
+      <p>Imagens: ilustrações originais da equipe. Créditos do som para Kelly Clarkson.</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

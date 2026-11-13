@@ -1,0 +1,46 @@
+LOJA: Anjoy's
+SEGMENTO: Confeitaria natalina
+TURMA: 1° TI-A
+
+INTEGRANTES:
+ - Ana Clara Seixas Gimenez - nº
+ - Joyce de Oliveira Silva - nº
+ - Sofia Lopes de Souza - nº
+
+LINKS:
+ Site (GitHub Pages): https://usuario.github.io/nome-do-repositorio/
+ Repositório (GitHub): https://github.com/usuario/nome-do-repositorio
+ Vídeo (YouTube): https://www.youtube.com/watch?v=...
+
+RECURSOS DE JAVASCRIPT IMPLEMENTADOS (mínimo de 8) - arquivo js/script.js:
+ 1. Slideshow / carrossel - index.html
+ 2. Parallax (2 camadas em velocidades diferentes) - index.html e ofertas.html
+ 3. Música de fundo "Underneath the Tree" (Kelly Clarkson), com botão de ligar/desligar - todas as páginas
+ 4. Cards dinâmicos (50 produtos de js/produtos.js) - index.html, produtos.html e ofertas.html
+ 5. Filtro por categoria e busca por nome - produtos.html
+ 6. Carrinho de compras com localStorage - todas as páginas
+ 7. Contagem regressiva até o Natal - index.html, ofertas.html e sobre.html
+ 8. Validação de formulário - contato.html
+ 9. Menu responsivo (hambúrguer) - todas as páginas
+10. Efeito de neve em canvas - index.html e ofertas.html
+11. Contadores animados (IntersectionObserver) - sobre.html
+12. Simulação de pagamento (crédito, débito e Pix) - pagamento.html, arquivo js/pagamento.js
+
+OBSERVAÇÕES TÉCNICAS:
+ Sem bibliotecas ou frameworks. HTML5 semântico, 1 h1 por página, CSS com variáveis em :root,
+ Flexbox, Grid, transições, animações e media queries mobile-first (600px e 992px).
+ O cabeçalho usa position: sticky e o parallax é feito em JavaScript, evitando
+ position: fixed e background-attachment: fixed (problemas no iPhone).
+ O pagamento é apenas uma simulação: nenhum valor é cobrado e nenhum dado é enviado.
+
+CRÉDITOS (imagens, sons e ícones):
+ - Banners "Especial de Natal" e "Decoração de Natal" (img/banners/natal-especial.jpg e natal-decoracao.jpg):
+   imagens encontradas no Google/Pinterest.
+ - Imagens dos produtos, do carrossel e da equipe: pegas de sites externos (principalmente Pinterest,
+   além de Pexels e outros sites) apenas para ilustrar os doces, com autorização do professor.
+ - Fita de cetim (img/banners/fita.svg) e img/logo (img/favicon.svg): arquivos da pasta img/ do projeto.
+ - Música: "Underneath the Tree" - Kelly Clarkson (arquivo na pasta audio/). Os direitos pertencem à artista;
+   uso apenas escolar.
+ - Fontes: Mountains of Christmas e Poppins - Google Fonts (licença Open Font License).
+ - Mapa: Bing Maps (incorporado na página de contato). A localização é apenas ilustrativa.
+ - Nomes, descrições e textos: criados pela equipe. Loja, endereço e telefone são fictícios.

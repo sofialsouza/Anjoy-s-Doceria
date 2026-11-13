@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento | Anjoy's</title>
+  <meta name="description" content="Simulação de pagamento da loja Anjoy's: escolha crédito, débito ou Pix.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="ofertas.html">Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="secao container" aria-labelledby="titulo-pg">
+      <h1 id="titulo-pg">Pagamento</h1>
+      <p id="carrinho-vazio" class="vazio" hidden>Seu carrinho está vazio. <a href="produtos.html">Escolha seus doces</a> para continuar.</p>
+      <div id="etapa-pagamento" class="pagamento">
+        <article id="painel-resumo" class="painel">
+          <h2>Resumo do pedido</h2>
+          <ul id="resumo-itens" class="resumo"></ul>
+          <p class="total-linha">Total: <strong id="total-pedido"></strong></p>
+        </article>
+        <article class="painel">
+          <h2>Opção de pagamento:</h2>
+          <form id="form-pagamento">
+            <fieldset>
+              <legend class="sr-only">Escolha a forma de pagamento</legend>
+              <label class="opcao"><input type="radio" name="forma" value="credito"> Crédito</label>
+              <label class="opcao"><input type="radio" name="forma" value="debito"> Débito</label>
+              <label class="opcao"><input type="radio" name="forma" value="pix"> Pix</label>
+            </fieldset>
+            <div id="opcoes-credito" hidden>
+              <p class="dica-pg">Como deseja pagar no crédito?</p>
+              <div id="lista-parcelas"></div>
+            </div>
+            <div id="opcoes-debito" hidden>
+              <p class="dica-pg">O valor será debitado à vista da sua conta (simulação).</p>
+            </div>
+            <div id="opcoes-pix" hidden>
+              <p class="dica-pg">Aponte a câmera do celular para o código abaixo (simulação, nada será cobrado).</p>
+              <div id="pix-qr" class="pix-qr" role="img" aria-label="QR Code de exemplo para pagamento por Pix"></div>
+              <p class="dica-pg">Chave Pix de exemplo: pagamentos@anjoys.exemplo</p>
+            </div>
+            <button id="btn-pagar" class="btn" type="submit" hidden>Realizar pagamento</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <section id="processando" class="secao container final" aria-labelledby="t-proc" hidden>
+      <div class="spinner" aria-hidden="true"></div>
+      <h2 id="t-proc">Processando pagamento...</h2>
+    </section>
+    <section id="final" class="secao container final" aria-labelledby="t-final" hidden>
+      <h2 id="t-final" tabindex="-1">Pagamento aprovado!</h2>
+      <p class="dica-pg">Esta foi apenas uma simulação: nenhum valor foi cobrado.</p>
+      <p class="final-frase">Volte sempre!</p>
+      <a class="btn" href="index.html">Voltar à página inicial</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria artesanal fictícia criada para um trabalho escolar.</p>
+      <p>Imagens: ilustrações originais da equipe. Sons: sintetizados no navegador.</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/pagamento.js"></script>
+</body>
+</html>

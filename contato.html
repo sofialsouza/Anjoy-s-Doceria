@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | Anjoy's</title>
+  <meta name="description" content="Fale com a Doce Natal: formulário de contato, endereço, telefone, redes sociais e mapa.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="ofertas.html">Ofertas</a></li><li><a href="contato.html" aria-current="page">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="secao container" aria-labelledby="titulo-ct">
+      <h1 id="titulo-ct">Contato</h1>
+      <div class="duas-colunas">
+        <article>
+          <h2>Envie uma mensagem</h2>
+          <form id="form-contato" novalidate>
+            <div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name"><span class="erro" id="erro-nome"></span></div>
+            <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"><span class="erro" id="erro-email"></span></div>
+            <div class="campo"><label for="assunto">Assunto</label><input id="assunto" name="assunto" type="text"><span class="erro" id="erro-assunto"></span></div>
+            <div class="campo"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="5"></textarea><span class="erro" id="erro-mensagem"></span></div>
+            <button class="btn" type="submit">Enviar mensagem</button>
+            <p id="retorno" class="retorno" role="status"></p>
+          </form>
+        </article>
+        <article>
+          <h2>Informações da loja</h2>
+          <address>
+            Rua Pastor Hugo Gegembauer, 265 -<br>Hortolândia, SP<br>
+            Telefone: <a href="tel:+551100000000">(19) 99999-9999</a><br>
+            Atendimento: Segunda à Sábado, das 8h às 16h
+          </address>
+          <p class="redes"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest</a></p>
+        </article>
+      </div>
+    </section>
+    <section class="secao container" aria-labelledby="t-mapa">
+      <h2 id="t-mapa">Como chegar</h2>
+      <div class="mapa"><iframe title="Mapa com a localização aproximada da loja" loading="lazy" src="https://www.bing.com/maps?&mepi=0~~Embedded~Address_Link&ty=18&q=UNASP%20-%20Centro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Hortol%C3%A2ndia&ss=ypid.YND2638E45FCBD506B&ppois=-22.877485275268555_-47.22682571411133_UNASP%20-%20Centro%20Universit%C3%A1rio%20Adventista%20de%20S%C3%A3o%20Paulo%20-%20Campus%20Hortol%C3%A2ndia_YND2638E45FCBD506B~&cp=-22.877485~-47.226826&v=2&sV=1&FORM=MPSRPL"></iframe></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria natalina artesanal.</p>
+      <p>Imagens: ilustrações originais da equipe. Créditos do som para Kelly Clarkson .</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

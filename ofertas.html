@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ofertas Especiais | Anjoy's</title>
+  <meta name="description" content="Ofertas natalinas da Anjoy's com contagem regressiva até o Natal.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="ofertas.html" aria-current="page">Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero hero-menor" aria-labelledby="titulo-of">
+      <div class="hero-bg" data-parallax="0.3"></div>
+      <div class="hero-estrelas" data-parallax="0.1" aria-hidden="true"></div>
+      <div class="fita fita-a" aria-hidden="true"></div>
+      <div class="fita fita-b" aria-hidden="true"></div>
+      <canvas id="neve" aria-hidden="true"></canvas>
+      <div class="container hero-content">
+        <h1 id="titulo-of">Ofertas especiais</h1>
+        <p class="hero-sub">O Natal chega em:</p>
+        <div class="contagem" aria-live="off">
+          <p><strong id="cd-d">0</strong>dias</p><p><strong id="cd-h">0</strong>horas</p><p><strong id="cd-m">0</strong>min</p><p><strong id="cd-s">0</strong>seg</p>
+        </div>
+      </div>
+    </section>
+    <section class="secao container" aria-labelledby="t-banner">
+      <h2 id="t-banner" class="sr-only">Especial de Natal: até 50% de desconto</h2>
+      <figure class="banner-img"><img src="img/banners/natal-especial.jpg" alt="Banner Especial de Natal: até 50% de desconto em doces natalinos. Torne seu Natal mais doce." width="1440" height="810" loading="lazy"></figure>
+    </section>
+    <section class="secao container" aria-labelledby="t-of">
+      <h2 id="t-of">Promoções de hoje</h2>
+      <article class="texto-largo"><p>Os preços abaixo já estão com desconto, válidos até o Natal.</p></article>
+      <div class="grade" id="ofertas"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria natalina artesanal.</p>
+      <p>Imagens: ilustrações originais da equipe. Créditos do som para Kelly Clarkson.</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

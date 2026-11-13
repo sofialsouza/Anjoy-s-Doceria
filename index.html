@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Anjoy's</title>
+  <meta name="description" content="Anjoy's: doceria artesanal com panetones, chocolates e kits para o fim de ano.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html">Sobre Nós</a></li><li><a href="ofertas.html">Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero-bg" data-parallax="0.35"></div>
+      <div class="hero-estrelas" data-parallax="0.12" aria-hidden="true"></div>
+      <img class="hero-arte" data-parallax="0.1" src="img/banners/natal-decoracao.jpg" alt="Cupcake com biscoito de gengibre, brigadeiros, presente com laço dourado e árvore de Natal enfeitada" width="600" height="771">
+      <div class="fita fita-a" aria-hidden="true"></div>
+      <div class="fita fita-b" aria-hidden="true"></div>
+      <canvas id="neve" aria-hidden="true"></canvas>
+      <div class="container hero-content">
+        <p class="hero-kicker">Doces natalinos</p>
+        <h1 id="titulo-hero">Anjoy's</h1>
+        <p class="hero-sub">Torne seu Natal mais doce, com receitas artesanais para uma ceia delicada. Faltam <strong data-dias>0</strong> dias para o Natal.</p>
+        <div class="hero-botoes">
+          <a class="btn" href="produtos.html">Escolher doces</a>
+          <a class="btn btn-claro" href="ofertas.html">Ver ofertas</a>
+        </div>
+      </div>
+    </section>
+    <section class="secao container" aria-labelledby="t-promo">
+      <h2 id="t-promo">Promoções da temporada</h2>
+      <div class="carrossel" id="carrossel">
+        <div class="slides">
+        <article class="slide slide-banner" aria-label="Especial de Natal">
+          <a href="ofertas.html"><img src="img/banners/natal-especial.jpg" alt="Banner Especial de Natal: até 50% de desconto em doces natalinos. Compre agora." width="1440" height="810"></a>
+        </article>
+        <article class="slide" aria-label="Destaque 1">
+          <img src="https://i.pinimg.com/736x/74/d5/29/74d5298a5024c1e0ce877775366b5adb.jpg" alt="Ilustração de Cesta Noite Feliz" width="600" height="600">
+          <div class="slide-texto"><h3>Cesta Noite Feliz</h3><p>Panetone, bombons e biscoitos em uma cesta pronta para presentear.</p><a class="btn" href="produtos.html">Ver produtos</a></div>
+        </article>
+        <article class="slide" aria-label="Destaque 2">
+          <img src="https://i.pinimg.com/1200x/69/d0/57/69d0576fa44d09c3c9525f124e1111a1.jpg" alt="Ilustração de Panetone Trufado de Chocolate" width="600" height="600">
+          <div class="slide-texto"><h3>Panetone Trufado com 20% off</h3><p>Nosso queridinho com recheio de trufa belga.</p><a class="btn" href="produtos.html">Ver produtos</a></div>
+        </article>
+        <article class="slide" aria-label="Destaque 3">
+          <img src="https://i.pinimg.com/1200x/a0/b7/63/a0b763c764ee613ed100df30ff42d8cf.jpg" alt="Ilustração de Calendário do Advento Doce" width="600" height="600">
+          <div class="slide-texto"><h3>Calendário do Advento</h3><p>Vinte e quatro mimos para contar os dias até o Natal.</p><a class="btn" href="produtos.html">Ver produtos</a></div>
+        </article>
+        </div>
+        <div class="carrossel-controles">
+          <button type="button" class="icon-btn" id="prev" aria-label="Slide anterior">Anterior</button>
+          <div class="pontos" id="pontos" role="tablist" aria-label="Escolher slide"></div>
+          <button type="button" class="icon-btn" id="next" aria-label="Próximo slide">Próximo</button>
+        </div>
+      </div>
+    </section>
+    <section class="secao container" aria-labelledby="t-dest">
+      <h2 id="t-dest">Produtos em destaque</h2>
+      <div class="grade" id="destaques"></div>
+    </section>
+    <section class="secao container" aria-labelledby="t-chamadas">
+      <h2 id="t-chamadas">Explore a loja</h2>
+      <div class="chamadas">
+        <article class="chamada"><h3>Catálogo completo</h3><p>50 doces para filtrar e buscar por nome.</p><a class="btn" href="produtos.html">Ver produtos</a></article>
+        <article class="chamada"><h3>Ofertas especiais</h3><p>Descontos com contagem regressiva até o Natal.</p><a class="btn" href="ofertas.html">Ver ofertas</a></article>
+        <article class="chamada"><h3>Nossa história</h3><p>Conheça a equipe e o jeito de fazer da casa.</p><a class="btn" href="sobre.html">Sobre nós</a></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria natalina artesanal.</p>
+      <p>Imagens: ilustrações originais da equipe. Créditos do som para Kelly Clarkson.</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

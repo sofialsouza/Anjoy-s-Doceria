@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Nós | Anjoy's</title>
+  <meta name="description" content="Conheça a história, a missão, a visão, os valores e a equipe da Anjoy's.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><span>Anjoy's</span></a>
+      <nav id="menu" class="nav" aria-label="Menu principal"><ul><li><a href="index.html">Home</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="sobre.html" aria-current="page">Sobre Nós</a></li><li><a href="ofertas.html">Ofertas</a></li><li><a href="contato.html">Contato</a></li></ul></nav>
+      <div class="header-actions">
+        <button id="btn-carrinho" class="icon-btn" type="button">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="secao container" aria-labelledby="titulo-sobre">
+      <h1 id="titulo-sobre">Sobre nós</h1>
+      <article class="texto-largo">
+        <h2>Nossa história</h2>
+        <p>A Anjoy's nasceu em 2018, numa cozinha pequena onde uma receita de panetone de família virou presente para os vizinhos. Todo dezembro, a fila na porta crescia e então decidimos fazer doces para a ceia de centenas de famílias!</p>
+        
+      </article>
+    </section>
+    <section class="secao container" aria-labelledby="t-mvv">
+      <h2 id="t-mvv">Missão, visão e valores</h2>
+      <div class="chamadas">
+        <article class="chamada"><h3>Missão</h3><p>Adoçar o fim de ano de cada cliente com receitas artesanais feitas com inredientes selecionados.</p></article>
+        <article class="chamada"><h3>Visão</h3><p>Nós desejamos que muitos possam celebrar o Natal, uma data tão especial, degustando a leveza e o sabor único de nossos doces! </p></article>
+        <article class="chamada"><h3>Valores</h3><p>Visamos principalmente em ter cuidado, honestidade e respeito a quem cozinha e a quem consume!</p></article>
+      </div>
+    </section>
+    <section class="secao container" aria-labelledby="t-equipe">
+      <h2 id="t-equipe">Nossa equipe</h2>
+      <div class="grade equipe"><article class="membro"><img src="https://i.pinimg.com/736x/ac/34/17/ac34174ba125d438c2383692a9144d41.jpg" alt="Aluno 1" width="200" height="200"><h3>Ana Clara</h3><p>HTML, CSS e identidade visual</p></article><article class="membro"><img src="https://i.pinimg.com/736x/6f/19/4a/6f194aaa721b72c0b60fce39eb389fb5.jpg" alt="Aluno 2" width="200" height="200"><h3>Joyce Oliveira</h3><p>JavaScript</p></article><article class="membro"><img src="https://i.pinimg.com/736x/6d/60/65/6d6065707e18861ddfee56bf72041d9c.jpg" alt="Aluno 3" width="200" height="200"><h3>Sofia Lopes</h3><p>Produtos, conteúdo e GitHub Pages</p></article></div>
+    </section>
+    <section class="secao container" aria-labelledby="t-tempo">
+      <h2 id="t-tempo">Faltam <span id="dias" data-contar="0">0</span> dias para o Natal</h2>
+      <ol class="linha-tempo">
+        <li><strong>2018</strong><p>Primeiras vendas entre a vizinhança.</p></li>
+        <li><strong>2021</strong><p>Abertura da primeira loja física.</p></li>
+        <li><strong>2024</strong><p>Chegada dos kits de presente e do calendário do advento.</p></li>
+        <li><strong>2026</strong><p>Lançamento da loja online.</p></li>
+      </ol>
+      <div class="numeros">
+        <p><strong data-contar="12000">0</strong> doces entregues</p>
+        <p><strong data-contar="50">0</strong> produtos no catálogo</p>
+        <p><strong data-contar="8">0</strong> anos de história</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anjoy's, doceria natalina artesanal.</p>
+      <p>Imagens: ilustrações originais da equipe. Sons: sintetizados no navegador.</p>
+      <p><a href="contato.html">Fale com a gente</a> · <a href="produtos.html">Ver catálogo</a></p>
+    </div>
+  </footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
